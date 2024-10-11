@@ -1,0 +1,12 @@
+<div class="border-2 rounded-xl border-black rounded-sm px-4 py-6 shadow-md shadow-black">
+    <div class="mb-8 tracking-wide"><%= content %></div>
+    
+    <div class="flex items-center">
+        <img src="<%= relative_url 'images/avatar.svg' %>"  alt='Avatar for recommendations' class="w-8 h-8 mr-2" />
+        
+        <div>
+            <span clas="text-md font-semibold"><%= @name %></span>
+            <span class="block text-xs text-gray"><%= @title %></span>
+        </div>
+    </div>
+</div>

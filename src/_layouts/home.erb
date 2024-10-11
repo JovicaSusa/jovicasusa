@@ -1,0 +1,366 @@
+---
+layout: default
+---
+
+<%# HERO START %>
+    <div class="hero bg-base-200 min-h-screen">
+      <div class="hero-content flex-col lg:flex-row-reverse">
+        <div>
+          <dotlottie-player src="<%= relative_url '/images/hero-animation.lottie' %>" background="transparent"  speed="1" loop autoplay></lottie-player>>
+        </div>
+        <div>
+          <h1 class="text-5xl font-bold font-mono">Crafting Code With Care!</h1>
+          <p class="py-6">
+            Hello there! I'm Jovica Susa, web developer from Serbia. For almost 10 years
+            I'm devoted to building beautify web solutions, improving my skills and teaching others.
+            Here you can find out more about me and my professional experience. You can also read
+            some of my blog posts.
+          </p>
+          <a href="#get-in-touch">
+            <button class="btn btn-outline">Let's colaborate</button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <%# HERO END %>
+
+    <div class="divider"></div>
+
+    <%# https://www.svgrepo.com/svg/535436/heart %>
+    <div class="flex flex-col items-center mb-16 md:mb-24">
+      <h2 class="text-3xl font-bold mt-24 sm:mt-32 text-center tracking-wide font-mono">Technologies</h2>
+      <div class="flex items-end md:items-center">
+        <span class="block text-5xl font-bold mr-1 font-mono">I</span>
+        <img src=<%= relative_url "images/heart.svg" %> class="ml-1 h-12 w-12 md:w-16 md:h-16 text-center animate-pulse" />
+      </div>
+    </div>
+
+    <div class="grid grid-cols-3 gap-y-24 gap-x-8 justify-content mb-24 md:px-24">
+        <%# Ruby %>
+        <img src=<%= relative_url "images/ruby.svg" %>  class="w-12 h-12 md:w-24 md:h-24 justify-self-center self-center" />
+        
+        <%# Rails %>
+        <img src=<%= relative_url "images/rails.svg" %>  class="w-12 h-12 md:w-24 md:h-24 justify-self-center self-center" />
+        
+        <%# Postgres %>
+
+        <img src=<%= relative_url "images/postgres.svg" %>  class="w-12 h-12 md:w-24 md:h-24 justify-self-center self-center" />
+        
+        <%# RSpec %>
+
+        <img src=<%= relative_url "images/rspec.svg" %>  class="w-12 h-12 md:w-24 md:h-24 justify-self-center self-center" />
+
+        <%# Typescript %>
+
+        <img src=<%= relative_url "images/ts.svg" %>  class="w-12 h-12 md:w-24 md:h-24 justify-self-center self-center" />
+
+        <%# html %>
+        <img src=<%= relative_url "images/html.svg" %>  class="w-12 h-12 md:w-24 md:h-24 justify-self-center self-center" />
+
+        <%# css %>
+
+        <img src=<%= relative_url "images/css.svg" %>  class="w-12 h-12 md:w-24 md:h-24 justify-self-center self-center" />
+
+        <%# tailwind %>
+
+        <img src=<%= relative_url "images/tailwind.svg" %>  class="w-12 h-12 md:w-24 md:h-24 justify-self-center self-center" />
+
+        <%# docker %>
+
+        <img src=<%= relative_url "images/docker.svg" %>  class="w-12 h-12 md:w-24 md:h-24 justify-self-center self-center" />
+
+        <%# react %>
+
+        <img src=<%= relative_url "images/react.svg" %>  class="w-12 h-12 md:w-24 md:h-24 justify-self-center self-center" />
+        
+        <%# js %>
+        <img src=<%= relative_url "images/js.svg" %>  class="w-12 h-12 md:w-24 md:h-24 justify-self-center self-center" />
+
+        <%# vs code %>
+        <img src=<%= relative_url "images/vs_code.svg" %> class="w-12 h-12 md:w-24 md:h-24 justify-self-center self-center" />
+      </div>
+
+    <div class="divider"></div>
+
+    <%# PARTNERS START %>
+    <div class="my-24 sm:my-32">
+      <h2 class="text-3xl font-bold text-center mb-12 font-mono">The applications I had opportunity contributing to</h2>
+
+      <div class="md:grid md:grid-cols-4 md:mx-16 md:gap-4 mt-4 md:mt-8 lg:mt-16">
+        <%= render(Shared::WorkCard.new("Smily")) do %>
+          Spent almost 4 years in Smily(former Bookingsync) as a part of integration team ensuring that integration with our
+          partners(Airbnb, Booking.com, Tripadvisor...) works smoothly.
+        <% end %>
+        <%= render(Shared::WorkCard.new("Thompson Learn")) do %>
+          My first big project. It was quite challenging to start working on a Rails and Ember application
+          with just few months of Rails experience and no Ember experience at all.
+          But it was a fun ride and I learned so much in almost two years working on it.
+        <% end %>
+        <%= render(Shared::WorkCard.new("HRX Latvia")) do %>
+          Jumping on the project in the middle of the summer, which has a deadline for the end of the summer doesn't sound tempting,
+          ...
+        <% end %>
+        <%= render(Shared::WorkCard.new("Senukai.lt")) do %>
+          Working on a biggest Baltic e-commerce shop was at the same time exciting, challanging and a bit scary.
+          Happy that I had a chance to help out building loyalty program solution and make their
+          customers even more happy.
+        <% end %>
+        <%= render(Shared::WorkCard.new("Upstrive Education")) do %>
+          Happy that I had opportunity to improve my React and React Native skills while working on this ... app.
+        <% end %>
+        <%= render(Shared::WorkCard.new("BSDX Exchange")) do %>
+          On a six months gig I had opportunity to help BSDX in shaping up their online crypto currency exchange.
+        <% end %>
+        <%= render(Shared::WorkCard.new("ENME")) do %>
+          Working on a couple occasions on this application helped me to understand Vue.js better.
+        <% end %>
+        <%= render(Shared::WorkCard.new("Mana pilsēta")) do %>
+          It was a refresher to work on a Rails only app, just how we used to work years ago.
+        <% end %>
+      </div>
+    </div>
+    <%# PARTNERS END %>
+
+    <div class="divider"></div>
+
+    <%# EXPERIENCE START %>
+    <div class="my-12 md:my-24 sm:px-24 md:px-42">
+      <h2 class="text-3xl font-bold text-center mb-24 font-mono">Experience</h2>
+      
+      <ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+        <li>
+          <div class="timeline-middle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="h-5 w-5">
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                clip-rule="evenodd" />
+            </svg>
+          </div>
+          <div class="timeline-start mb-10 md:text-end">
+            <time class="font-mono italic">2015</time>
+            <div class="text-lg font-black">Starting my journey at OrangeIceberg</div>
+            <p>
+              Falling in love with Ruby. Feeling like I have superpowers when using Rails(miss this feeling).
+              Learning JavaScript quirks with Ember.js. Playing basketball and poker after the work.
+            </p>
+          </div>
+          <hr />
+        </li>
+        <li>
+          <hr />
+          <div class="timeline-middle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="h-5 w-5">
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                clip-rule="evenodd" />
+            </svg>
+          </div>
+          <div class="timeline-end mb-10">
+            <time class="font-mono italic">2017</time>
+            <div class="text-lg font-black">Going remote with Bookingsync</div>
+            <p>Getting to know online vacation rental domain.
+              Brushing up my Rails and Ember.js skills. Fighting with imposter syndrom but overall enjoying remote work and team retreats</p>
+          </div>
+          <hr />
+        </li>
+        <li>
+          <hr />
+          <div class="timeline-middle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="h-5 w-5">
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                clip-rule="evenodd" />
+            </svg>
+          </div>
+          <div class="timeline-start mb-10 md:text-end">
+            <time class="font-mono italic">2021</time>
+            <div class="text-lg font-black">Various freelance projects</div>
+            <p>
+              Taking small break, trying to build some personal projects but learning that it's much harder than I imagined.
+              Doing few small freelance gigs. Getting to know React and React Native but happy that we have Hotwire in our
+              community now.
+            </p>
+          </div>
+          <hr />
+        </li>
+        <li>
+          <hr />
+          <div class="timeline-middle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="h-5 w-5">
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                clip-rule="evenodd" />
+            </svg>
+          </div>
+          <div class="timeline-end mb-10">
+            <time class="font-mono italic">2022</time>
+            <div class="text-lg font-black">Mitigate</div>
+            <p>
+              Learning about Latvian culture and taking a trip to Baltic. Working with too many JavaScript frameworks({Blitz,Alpine,Vue,React}.js). Working with new generation of developers, understanding that things
+              have changed a bit and that I must go out of my comfort zone and update my skills. Working out with my coleagues and listening to good music.
+            </p>
+          </div>
+          <hr />
+        </li>
+        <li>
+          <hr />
+          <div class="timeline-middle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="h-5 w-5">
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                clip-rule="evenodd" />
+            </svg>
+          </div>
+          <div class="timeline-start mb-10 md:text-end">
+            <time class="font-mono italic">2023</time>
+            <div class="text-lg font-black">Smily</div>
+            <p>
+              Making a decision to return to previous company, choosing going to known instead unkonwn(in some sense making a step back).
+              Trying to find a way to work with DDD in Rails. Improving integration with Airbnb and Vrbo.
+              Soon after joining financial problems appeared, getting my first lay off with ten of my other coleagues.
+            </p>
+          </div>
+        </li>
+        <li>
+          <hr />
+          <div class="timeline-middle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="h-5 w-5">
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                clip-rule="evenodd" />
+            </svg>
+          </div>
+          <div class="timeline-end mb-10">
+            <time class="font-mono italic">2024</time>
+            <div class="text-lg font-black">Independent developer</div>
+            Plans for development
+          </div>
+          <hr />
+        </li>
+      </ul>
+
+      <div class="w-full flex justify-center mt-24">
+        <a href="<%= relative_url 'src/images/JovicaSusaCV.pdf' %>" download>
+          <button class="btn btn-neutral animate-bounce">
+            Download CV
+          </button>
+        </a>
+      </div>
+    </div>
+    <%# EXPERIENCE END %>
+    <%# RECOMMENDATIONS START %>
+    <div class="divider"></div>
+
+    <div class="sm:max-h-screen md:flex my-24 md:my-32 md:px-32">
+      <div class="text-center md:w-1/2">
+        <h2 class="text-3xl font-bold mb-6 md:mb-12 font-mono">What other say about me?</h2>
+
+        <img src="<%= relative_url '/images/convo.svg' %>" alt="Recommendation Illustration" class="w-44 h-44 md:w-60 md:h-60 inline-block mb-6" />
+      </div>
+      
+      <div class="md:w-1/2 sm:max-h-screen sm:overflow-scroll">
+        <%= render(Shared::Recommendation.new("Basile Hamon", "Senior Product Manager")) do %>
+          <p>
+            Jovica is an exceptional software developer with a remarkable ability to take the initiative and drive projects forward. His proactive approach has been instrumental in tackling complex challenges within the connectivity domain. 
+            He possesses a strong problem-solving mindset, always thinking several steps ahead to anticipate potential issues and devise effective solutions. Beyond technical prowess, Jovica keenly understands the product and business needs, ensuring that their contributions align perfectly with Smily.com's goals.
+          </p>
+        <% end %>
+
+        <div class="h-6"></div>
+
+        <%= render(Shared::Recommendation.new("Maciej Wilk", "Senior Ruby on Rails developer")) do %>
+          <p>
+            Jovica has great grasp of Ruby (and Rails). He's got a keen instinct for simple solutions that get the job done. He provides valuable feedback during code reviews, always with empathy. His calmness helped centered our team in tough times, when something broke or we had to fix an urgent bug.
+            He demonstrated impressive ownership of the product, where he proactively checked various dashboards and monitors for early signs of issues. Jumping on a pair programming call with him was always easy and productive.
+
+            Working with Jovica was a great pleasure and I learned a lot from him. Any team will be lucky to have him as a member.
+          </p>
+        <% end %>
+
+        <div class="h-6"></div>
+        
+        <%= render(Shared::Recommendation.new("Fernando Vicente Marques Favini", "Software Engineer at Smily")) do %>
+          <p>
+            Meeting and working with Jovica was a pleasure, Jovica is a person I can rely when asking about the product or any technical question in the App
+
+            Jovica is not only able to describe the product, but also quickly respond when a Tech Support question arise, being proactive and quickly handling those.
+
+            Jovica is always help to bring and receive some new information, making any conversation a delight
+          </p>
+        <% end %>
+
+        <div class="h-6"></div>
+
+        <%= render(Shared::Recommendation.new("Oleg Borys", "Senior Software Engineer")) do %>
+          <p>
+            I had the pleasure of working with Jovica at Smily (formerly Bookingsync), and I was thoroughly impressed by his expertise in software architecture and development. Jovica possesses a deep understanding of both the technical and strategic aspects of software design, consistently delivering solutions that are not only robust but also scalable and maintainable.
+
+            His ability to navigate complex challenges, break them down into manageable components, and implement them with precision is truly commendable. Jovica is a proactive problem-solver, always staying ahead of potential issues and ensuring that the project remains on track. His knowledge of Ruby on Rails was instrumental in the success of our project.
+
+            Beyond his technical skills, Jovica is an excellent collaborator. He communicates complex ideas clearly and works seamlessly with cross-functional teams.
+
+            Jovica played a key role in developing the reviews module for VRBO. Although we were on different subteams, I was always impressed by his technical expertise and the quality of his work. He did great work helping me develop the front-end parts of the project I was working on, advocating for Hotwire, which brought real-time functionality to the product.
+
+            I highly recommend Jovica for any role that requires a blend of technical acumen and strategic vision. He would be a valuable asset to any team.
+          </p>
+        <% end %>
+      </div>
+    </div>
+    <%# RECOMMENDATIONS END %>
+  
+    <div class="divider text-center"></div>
+
+    <%# GET IN TOUCH START %>
+    <div id="get-in-touch" class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 text-center">
+      <div class="mx-auto max-w-lg text-center">
+        <h1 class="text-2xl font-bold sm:text-3xl font-mono">Let's get in touch!</h1>
+
+        <p class="mt-4 text-gray-500">
+          If you think there's anything I can do for you, don't hesitate, drop me a line!
+        </p>
+      </div>
+
+      
+      <button
+        type="submit"
+        class="inline-block btn btn-neutral mt-12"
+      >
+        Email me
+      </button>
+
+      <div class="mt-4">
+        <a class="text-sm font-semibold" target="_blank" href="https://www.linkedin.com/in/jovica-susa/">LinkedIn</a> /
+        <a class="text-sm font-semibold" target="_blank" href="https://github.com/JovicaSusa/">Github</a>
+      </div>
+    </div>
+    <%# GET IN TOUCH END %>

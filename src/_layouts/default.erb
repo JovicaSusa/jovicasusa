@@ -1,0 +1,25 @@
+<!doctype html>
+<html data-theme="light" lang="<%= site.locale %>">
+  <head>
+    <%= render "head", metadata: site.metadata, title: data.title %>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.js"></script>
+  </head>
+  <body class="<%= data.layout %> <%= data.page_class %> bg-base-200 px-8 scroll-smooth">
+    <%# NAVBAR START %>
+    <div class="navbar start-base-100">
+      <div class="flex-1">
+        <a class="btn btn-ghost text-xl">Jovica Susa</a>
+      </div>
+      <div class="flex-none">
+        <ul class="menu menu-horizontal px-1">
+          <li><a href="<%= relative_url '/posts' %>">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+    <%# NAVBAR END %>
+    
+    <%= yield %>
+    
+    <%= render "footer", metadata: site.metadata %>
+  </body>
+</html>
