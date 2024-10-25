@@ -30,8 +30,8 @@ layout: default
     <div class="flex flex-col items-center mb-16 md:mb-24">
       <h2 class="text-3xl font-bold mt-24 sm:mt-32 text-center tracking-wide font-mono">Technologies</h2>
       <div class="flex items-end md:items-center">
-        <span class="block text-5xl font-bold mr-1 font-mono">I</span>
-        <img src=<%= relative_url "images/heart.svg" %> class="ml-1 h-12 w-12 md:w-16 md:h-16 text-center animate-pulse" />
+        <span class="block text-3xl font-bold mr-1 font-mono">I</span>
+        <img src=<%= relative_url "images/heart.svg" %> class="ml-1 h-12 w-12 md:w-14 md:h-14 text-center animate-pulse" />
       </div>
     </div>
 
@@ -87,32 +87,33 @@ layout: default
       <h2 class="text-3xl font-bold text-center mb-12 font-mono">The applications I had opportunity contributing to</h2>
 
       <div class="md:grid md:grid-cols-4 md:mx-16 md:gap-4 mt-4 md:mt-8 lg:mt-16">
-        <%= render(Shared::WorkCard.new("Smily")) do %>
-          Spent almost 4 years in Smily(former Bookingsync) as a part of integration team ensuring that integration with our
-          partners(Airbnb, Booking.com, Tripadvisor...) works smoothly.
+        <%= render(Shared::WorkCard.new("Dream Holidays Insurance")) do %>
+          My first project. Small little app perfect for junior developer with no industry experience.
         <% end %>
         <%= render(Shared::WorkCard.new("Thompson Learn")) do %>
-          My first big project. It was quite challenging to start working on a Rails and Ember application
+          My first biggger project. It was quite challenging to start working on a Rails and Ember application
           with just few months of Rails experience and no Ember experience at all.
           But it was a fun ride and I learned so much in almost two years working on it.
         <% end %>
-        <%= render(Shared::WorkCard.new("HRX Latvia")) do %>
-          Jumping on the project in the middle of the summer, which has a deadline for the end of the summer doesn't sound tempting,
-          ...
-        <% end %>
-        <%= render(Shared::WorkCard.new("Senukai.lt")) do %>
-          Working on a biggest Baltic e-commerce shop was at the same time exciting, challanging and a bit scary.
-          Happy that I had a chance to help out building loyalty program solution and make their
-          customers even more happy.
+        <%= render(Shared::WorkCard.new("Smily")) do %>
+          I've worked around 4 years on Smily product, which consists of a lot of smaller applications written in Rails and Ember.js.
+          Worked with most of them but spent most of my time as integration developer, making sure that Smily integration with
+          Airbnb, Vrbo, Booking.com(and others) works smoothly.
         <% end %>
         <%= render(Shared::WorkCard.new("Upstrive Education")) do %>
-          Happy that I had opportunity to improve my React and React Native skills while working on this ... app.
+          Happy that I had oportunity to contribute to this beneficial application. Worked on it while I was exploring my next carrer steps and
+          spent few months working with React and React Native.
         <% end %>
         <%= render(Shared::WorkCard.new("BSDX Exchange")) do %>
           On a six months gig I had opportunity to help BSDX in shaping up their online crypto currency exchange.
         <% end %>
-        <%= render(Shared::WorkCard.new("ENME")) do %>
-          Working on a couple occasions on this application helped me to understand Vue.js better.
+        <%= render(Shared::WorkCard.new("Senukai.lt")) do %>
+          Seeing what's out there behind biggest Baltic online market was a great experience. I spent some time developing
+          their loyalty program and imporving their mobile api.
+        <% end %>
+        <%= render(Shared::WorkCard.new("HRX Latvia")) do %>
+          Jumping on the project in the middle of the summer, which has a deadline for the end of the summer doesn't sound too tempting,
+          but delivering it on time helps ...
         <% end %>
         <%= render(Shared::WorkCard.new("Mana pilsēta")) do %>
           It was a refresher to work on a Rails only app, just how we used to work years ago.
@@ -217,7 +218,7 @@ layout: default
             <div class="text-lg font-black">Mitigate</div>
             <p>
               Learning about Latvian culture and taking a trip to Baltic. Working with too many JavaScript frameworks({Blitz,Alpine,Vue,React}.js). Working with new generation of developers, understanding that things
-              have changed a bit and that I must go out of my comfort zone and update my skills. Working out with my coleagues and listening to good music.
+              have changed a bit and that I must go out of my comfort zone and update my skills. Going to gym with my coleagues and listening to good music.
             </p>
           </div>
           <hr />
@@ -263,7 +264,7 @@ layout: default
           <div class="timeline-end mb-10">
             <time class="font-mono italic">2024</time>
             <div class="text-lg font-black">Independent developer</div>
-            Plans for development
+            <p>In pursuite of happines.</p>
           </div>
           <hr />
         </li>
