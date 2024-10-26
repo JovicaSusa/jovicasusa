@@ -1,6 +1,6 @@
-# Bridgetown Website README
+# Jovica Susa website
 
-Welcome to your new Bridgetown website! You can update this README file to provide additional context and setup information for yourself or other contributors.
+Find out more about me and my experience on jovicasusa.com.
 
 ## Table of Contents
 
